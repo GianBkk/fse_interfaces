@@ -5,7 +5,7 @@ class Visitenkartendruck {
 
     public Visitenkartendruck(Mitarbeiter mitarbeiter, Druckbar drucker) {
         if (mitarbeiter == null || drucker == null) {
-            throw new IllegalArgumentException("Mitarbeiter und Drucker dürfen nicht null sein.");
+            throw new IllegalArgumentException("Dürfen nicht null sein.");
         }
         this.mitarbeiter = mitarbeiter;
         this.drucker = drucker;
@@ -13,14 +13,14 @@ class Visitenkartendruck {
 
     public void setMitarbeiter(Mitarbeiter mitarbeiter) {
         if (mitarbeiter == null) {
-            throw new IllegalArgumentException("Mitarbeiter darf nicht null sein.");
+            throw new IllegalArgumentException("Mitarbeiter darf Nicht Null sein");
         }
         this.mitarbeiter = mitarbeiter;
     }
 
     public void setDrucker(Druckbar drucker) {
         if (drucker == null) {
-            throw new IllegalArgumentException("Drucker darf nicht null sein.");
+            throw new IllegalArgumentException("Drucker darf Nicht Null sein.");
         }
         this.drucker = drucker;
     }
